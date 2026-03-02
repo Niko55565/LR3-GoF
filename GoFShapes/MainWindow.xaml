@@ -1,0 +1,21 @@
+<Window x:Class="GoFShapes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Этап 1 — Factory Method" Width="700" Height="450"
+        WindowStartupLocation="CenterScreen">
+  <DockPanel Margin="12">
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Center">
+      <TextBlock Text="Цвет:" VerticalAlignment="Center" Margin="0,0,8,0"/>
+      <ComboBox x:Name="ColorBox" Width="180" SelectionChanged="ColorBox_OnSelectionChanged">
+        <ComboBoxItem Content="Красный"/>
+        <ComboBoxItem Content="Синий"/>
+        <ComboBoxItem Content="Зелёный"/>
+      </ComboBox>
+      <TextBlock Text="  При смене цвета фигуры пересоздаются" VerticalAlignment="Center" Margin="12,0,0,0" Opacity="0.65"/>
+    </StackPanel>
+
+    <ScrollViewer Margin="0,12,0,0" VerticalScrollBarVisibility="Auto">
+      <WrapPanel x:Name="CanvasPanel"/>
+    </ScrollViewer>
+  </DockPanel>
+</Window>
