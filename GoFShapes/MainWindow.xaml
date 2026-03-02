@@ -1,7 +1,7 @@
 <Window x:Class="GoFShapes.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Этап 1 — Factory Method" Width="700" Height="450"
+        Title="Этап 2 — Abstract Factory" Width="700" Height="450"
         WindowStartupLocation="CenterScreen">
   <DockPanel Margin="12">
     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Center">

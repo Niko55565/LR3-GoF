@@ -7,7 +7,7 @@ namespace GoFShapes.Figures
     {
         public Color Color { get; set; }
 
-        // Создаёт визуальный элемент для отображения
+
         public abstract UIElement CreateUIElement(double size = 80);
     }
 }
